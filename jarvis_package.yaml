@@ -1,0 +1,16 @@
+name: "mistral-prompt-providers"
+display_name: "Mistral Prompt Providers"
+description: "Prompt providers for Mistral 7B Instruct v0.3 and Mixtral 8x7B. Handles both <tool_call> XML and native [TOOL_CALLS] output formats."
+version: "1.0.0"
+min_jarvis_version: "0.9.0"
+license: "MIT"
+author:
+  github: "alexberardi"
+categories: ["prompt-provider", "mistral"]
+platforms: ["darwin", "linux"]
+keywords: ["mistral", "mixtral", "prompt-provider", "function-calling", "gguf"]
+
+components:
+  - type: prompt_provider
+    name: Mistral7bMediumUntrained
+    path: prompt_providers/mistral/provider.py
